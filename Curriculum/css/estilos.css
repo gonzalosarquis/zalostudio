@@ -1,0 +1,492 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: Montserrat;
+}
+/*-------------------------------Barra de Nav-------------------------------*/
+header {
+    background-color: white;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+	display: flex;
+	position: sticky;
+	top:0;
+	z-index: 1;
+}
+
+.logo {
+	cursor:pointer;;
+    margin-right: auto;
+}
+
+.logo img{
+	width: 50%;
+    padding: 50px;
+    width: 120px;
+}
+.nav__links{
+	list-style: none;
+}
+
+.nav__links li{
+    display: inline-block;
+	padding: 0px 20px;
+}
+
+.nav__links li a{
+	transition: all 0.3s ease 0s;
+    font-size: 18px;
+}
+
+.nav__links li a:hover{
+	color: #ea9723;
+}
+
+.barranav{
+    position: absolute;
+    top: 50%;
+    right: 55%;
+}
+
+/*--------------X----------------Barra de Nav---------------X---------------*/
+
+.arriba{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    padding: 15px;
+}
+.arriba img{
+    width: 50%;
+}
+
+a{
+    text-decoration: none;
+    color: #161616;
+    font-weight: 700;
+    font-size: 25px;
+} 
+
+section{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.cajaGris{
+    width: 30%;
+    background-color:#343135;
+    color: #e6e6e6;
+    display: flex;
+}
+
+.años{
+    display: flex;
+    margin-top: 2%;
+}
+.años a{
+    color: #e6e6e6;
+}
+.años img{
+    width: 15px;
+    height: 25px;
+    margin-right: 10px;
+}
+
+.cajas{
+    margin-top: 6%;
+    margin-left: 25%;
+    width: 70%;   
+}
+
+.stevejobs{
+    width: 70%;    
+    border: solid 7px #ea9723;
+    margin-top: 10%;
+}
+
+.cajaTitulo{
+    display: flex;
+    margin-top: 8%;
+    margin-bottom: 8%;
+
+}
+.cajaTitulo h2{
+    font-size: 30px;
+}
+.cajaTitulo img{
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+.cajaBlanca{
+    width: 70%;
+    margin: 4%;
+}
+
+.cajaTitulo2{
+    display: flex;
+    margin-top: 4%;
+    margin-bottom: 2%;
+}
+.cajaTitulo2 h2{
+    font-size: 35px;
+}
+.cajaTitulo2 img{
+    width: 30px;
+    height: 30px;
+    padding: 7px;
+}
+
+.cajaTexto{
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+.cajaTexto p{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.cajaTexto img{
+    width: 70%;
+    height: 100%;
+}
+
+.cajaTitulo3{
+    display: flex;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+.cajaTitulo3 h2{
+    font-size: 35px;
+}
+.cajaTitulo3 img{
+    width: 1%;
+    padding: 7px;
+}
+
+.cajaTitulo4{
+    display: flex;
+    font-size: 35px;
+}
+
+.steve{
+    color: #ea9723;
+    margin-right: 15px;
+}
+
+.cajaSubtitulo{
+    font-size: 25px;
+}
+
+.texto{
+    margin-right: 5%;
+    font-size: 25px;
+    text-align: justify;
+}
+
+.cajaTextocontenedor{
+    display: flex;
+    align-items: center;
+}
+.cajaTextoimg{
+    width: 30%;   
+}
+.cajaTextoimg img{
+    width: 70%;
+    border: solid 7px #ea9723;
+}
+
+.cajaTextoimg2{
+    width: 70%;
+    margin-left: -5%;
+}
+.cajaTextoimg2 p{
+    margin-left: 5%;
+    margin-right: 5%;
+    font-size: 30px;
+    text-align: justify;
+}
+
+footer{
+    background-color:#161616;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+    padding: 2%;
+    text-align: center;
+}
+footer p{
+    color: aliceblue;
+    font-size: 18px;
+    padding: 8px;
+}
+
+/*------------------------------Media Query-----------------------*/
+@media (max-width:1366px){
+    .barranav{
+        top: 50%;
+        right: 45%;
+    }    
+    .años a{
+        font-size: 20px;
+    }
+    .cajaTitulo4 h2{
+        font-size: 40px;
+    }
+    .cajaSubtitulo p{
+        font-size: 20px;
+    }
+    .cajaTitulo h2{
+        font-size: 20px;
+    }
+    .cajaTitulo2 h2{
+        font-size: 25px;
+    }
+    .cajaTitulo2 img{
+        width: 20px;
+        height: 20px;
+    }
+    .cajaTitulo3 h2{
+        font-size: 25px;
+    }
+    .cajaTextoimg2 p{
+        font-size: 20px;
+    }
+    .texto{
+        font-size: 20px;
+    }
+    .cajaTitulo img{
+        width: 20px;
+        height: 20px;
+    }
+}
+
+@media (max-width:992px){
+    .barranav{
+        right: 25%;
+    }
+    
+    .años a{
+        font-size: 18px;
+    }
+    .años img{
+        width: 10px;
+        height: 20px;
+    }
+    .cajaTitulo4 h2{
+        font-size: 40px;
+    }
+    .cajaSubtitulo p{
+        font-size: 20px;
+    }
+    .cajaTitulo h2{
+        font-size: 18px;
+    }
+    .cajaTitulo img{
+        width: 15px;
+        height: 15px;
+    }
+    .cajaTitulo2 h2{
+        font-size: 25px;
+    }
+    .cajaTitulo2 img{
+        width: 20px;
+        height: 20px;
+    }
+    .cajaTitulo3 h2{
+        font-size: 25px;
+    }
+    .cajaTitulo3 img{
+        width: 10px;
+        height: 20px;
+    }
+    .cajaTextoimg2 p{
+        font-size: 15px;
+    }
+    .texto{
+        font-size: 18px;
+    }
+}
+
+@media (max-width:768px){
+    .barranav{
+        position: relative;
+        top: 0%;
+        right: 0%;
+    }
+    
+    header{
+        display: block;
+        text-align: center;
+        padding-right: 110px;
+    }
+    .nav__links{
+        margin-left: 120px;
+        text-align: center;
+        padding-bottom: 40px;
+    }
+    .logo{
+        margin-left: 55px;
+    }
+    section{
+        display: block;
+    }
+    .cajaBlanca{
+        width: 100%;
+        padding: 0;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .cajaGris{
+        width: 100%;
+        padding-bottom: 10%;
+    }
+    .cajas{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .stevejobs{
+        width: 100%;
+    }
+    .cajaTextocontenedor{
+        display: block;
+    }
+    .cajaTextoimg{
+        width: 100%;
+        text-align: center;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    .cajaTextoimg2{
+        width: 100%;
+        margin-left: 0;
+    }
+    .cajaTextoimg2 p{
+        padding: 20px;
+        font-size: 25px;
+    }
+    .cajaTexto img{
+        width: 90%;
+    }
+    .cajaTexto p{
+        font-size: 25px;
+    }
+    .años a{
+        font-size: 25px;
+    }
+    .texto{
+        margin-right: 0;
+        padding: 45px;
+        padding-top: 0;
+    }
+    .cajaTitulo img{
+        width: 35px;
+        height: 35px;
+    }
+    .cajaTitulo h2{
+        font-size: 35px;
+    }
+    .cajaTitulo2{
+        margin-left: 30px;
+    }
+    .cajaTitulo3{
+        margin-left: 40px;
+    }
+    .cajaTitulo3 h2{
+        font-size: 35px;
+    }
+    .cajaTitulo3 img{
+        width: 20px;
+        height: 30px;
+    }
+    .cajaTitulo4{
+        margin-left: 40px;
+    }
+    .cajaSubtitulo{
+        margin-left: 40px;
+    }
+}
+
+@media (max-width:480px){
+    header{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .nav__links{
+        margin-left: 120px;
+        text-align: center;
+        padding-bottom: 20px;
+    }
+    .nav__links li{
+        margin-bottom: 10px;
+    }
+    .logo{
+        margin-left: 55px;
+    }
+    .logo img{
+        padding: 30px;
+    }
+    section{
+        display: block;
+    }
+    .cajaBlanca{
+        width: 100%;
+        padding: 0;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .cajaGris{
+        width: 100%;
+        padding-bottom: 10%;
+    }
+    .cajas{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .stevejobs{
+        width: 100%;
+    }
+    .cajaTextocontenedor{
+        display: block;
+    }
+    .cajaTextoimg{
+        width: 100%;
+        text-align: center;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    .cajaTextoimg2{
+        width: 100%;
+        margin-left: 0;
+    }
+    .cajaTextoimg2 p{
+        padding: 20px;
+        font-size: 25px;
+    }
+    .cajaTexto img{
+        width: 90%;
+    }
+    .texto{
+        margin-right: 0;
+        padding: 35px;
+    }
+    .cajaTitulo2{
+        margin-left: 30px;
+    }
+    .cajaTitulo3{
+        margin-left: 30px;
+    }
+    .cajaTitulo3 img{
+        width: 20px;
+        height: 30px;
+    }
+    .cajaTitulo4{
+        margin-left: 30px;
+    }
+    .cajaSubtitulo{
+        margin-left: 30px;
+    }
+}
+/*-------------X----------------Media Query------------X----------*/
